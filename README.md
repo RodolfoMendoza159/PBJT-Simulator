@@ -16,14 +16,16 @@ source .venv/bin/activate
 3. Install requirements
 
 pip install -r requirements.txt
+
 -----------------------------------------------
-## if it doesnt work. install all manually(one by one): 
+## if it doesnt work then install all manually(one by one): 
 
 pip install numpy pandas scipy
 
 pip install scikit-learn
 
 pip install matplotlib
+
 ------------------------------------------------
 ## To run the Simulation and AI:
 1. Create Training Set: 
