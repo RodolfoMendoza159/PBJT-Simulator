@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import pickle
 
 # Load the dataset
-data = pd.read_csv("pbjt_large_dataset.csv")
+data = pd.read_csv("datasets/pbjt_large_dataset.csv")
 X = data.drop(columns=["label"])
 y = data["label"]
 
@@ -23,5 +23,5 @@ print(f"Model Accuracy: {accuracy:.2f}")
 print("Classification Report:\n", classification_report(y_test, predictions))
 
 # Save the trained model
-with open("pbjt_large_dataset.pkl", "wb") as model_file:
+with open("models/pbjt_large_dataset.pkl", "wb") as model_file:
     pickle.dump(model, model_file)

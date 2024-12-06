@@ -8,16 +8,16 @@ This project simulates the Piezoelectric Bipolar Junction Transistor (PBJT) resp
 
 python -m venv .venv
 
-# Linux/macOS  
+### Linux/macOS  
 source .venv/bin/activate 
- # Windows
+### Windows
 .venv\Scripts\activate
 
 3. Install requirements
 
 pip install -r requirements.txt
 -----------------------------------------------
-# if it doesnt work. install all manually(one by one): 
+## if it doesnt work. install all manually(one by one): 
 
 pip install numpy pandas scipy
 
@@ -25,14 +25,14 @@ pip install scikit-learn
 
 pip install matplotlib
 ------------------------------------------------
-# To run the Simulation and AI:
+## To run the Simulation and AI:
 1. Create Training Set: 
-python pbjt_simulation.py
+python scripts/pbjt_simulation.py
 
 2. Load Training into Ai Model: 
-python voice_ai_model.py 
+python scripts/voice_ai_model.py 
 
 3. Test the Simulator: 
-python pbjt_ai_testing.py
+python scripts/pbjt_ai_testing.py
 
 

@@ -6,13 +6,13 @@ import pickle
 from pbjt_simulation import generate_dataset
 
 # Load the trained AI model
-with open("pbjt_large_dataset.pkl", "rb") as model_file:
+with open("models/pbjt_large_dataset.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
 # Generate 10 test samples (5 male, 5 female)
 test_dataset = generate_dataset(num_samples=10)
-test_dataset.to_csv("pbjt_test_dataset.csv", index=False)
-print("Test dataset saved to 'pbjt_test_dataset.csv'")
+test_dataset.to_csv("outputs/pbjt_test_dataset.csv", index=False)
+print("Test dataset saved to 'outputs/pbjt_test_dataset.csv'")
 
 # Load features and labels
 X_test = test_dataset.drop(columns=["label"])

@@ -75,8 +75,8 @@ def generate_dataset(num_samples=50000):
     return pd.DataFrame(dataset)
 
 if __name__ == "__main__":
-    # Generate a dataset with 50,000 examples
-    dataset = generate_dataset(num_samples=50000)
-    print("Dataset generated with 50,000 examples.")
-    dataset.to_csv("pbjt_large_dataset.csv", index=False)
-    print("Dataset saved to 'pbjt_large_dataset.csv'")
+    # Generate a dataset with 10,000 examples
+    dataset = generate_dataset(num_samples=10000)
+    print("Dataset generated with 10,000 examples.")
+    dataset.to_csv("datasets/pbjt_large_dataset.csv", index=False)
+    print("Dataset saved to 'datasets/pbjt_large_dataset.csv'")
