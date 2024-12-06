@@ -17,16 +17,16 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
------------------------------------------------
+----
 ## if it doesnt work then install all manually(one by one): 
 
-pip install numpy pandas scipy
-
+pip install numpy pandas scikit-learn
+pip install numpy
+pip install pandas
+pip install scipy
 pip install scikit-learn
 
-pip install matplotlib
-
-------------------------------------------------
+---
 ## To run the Simulation and AI:
 1. Create Training Set: 
 python scripts/pbjt_simulation.py
