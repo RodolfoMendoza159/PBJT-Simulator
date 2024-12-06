@@ -10,12 +10,12 @@ This project simulates the Piezoelectric Bipolar Junction Transistor (PBJT) resp
 python -m venv .venv
 ```
 
-```bash
-### Linux/macOS  
+### Linux/macOS 
+```bash 
 source .venv/bin/activate 
 ```
-```bash
 ### Windows
+```bash
 .venv\Scripts\activate
 ```
 
